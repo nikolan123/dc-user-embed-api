@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="{{ description }}" property="og:description" />
+    <meta content="{{ thumbnail }}" property="og:image" />
+    <meta content="{{ title }}" property="og:title" />
+    <meta content="{{ color }}" data-react-helmet="true" name="theme-color" />
+    <title>{{ title }}</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: black;
+            color: white;
+            padding-left: 20px;
+        }
+    </style>
+    {% if bigimg %}
+    <meta name="twitter:card" content="summary_large_image">
+    {% endif %}
+</head>
+<body>
+    <h1>Discord Embed</h1>
+    <p>This is a Discord embed thingy, example usage:</p>
+    <p>https://embed.xpg.lol/embed?title=This+is+the+Title&description=Hi+blah+blah+blah+blah&color=%23eb4034&bigimg=true</p>
+</body>
+</html>
